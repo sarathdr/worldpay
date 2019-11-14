@@ -1,0 +1,29 @@
+{
+  "_links": {
+    "resourceTree": {
+      "href": "https://try.access.worldpay.com/payments/resourceTree"
+    },
+    "payments:authorize": {
+      "href": "https://try.access.worldpay.com/payments/authorizations"
+    },
+    "payments:migrateRecurringAuthorize": {
+      "href": "https://try.access.worldpay.com/payments/authorizations/migrateRecurring"
+    },
+    "payments:migrateCardOnFileAuthorize": {
+      "href": "https://try.access.worldpay.com/payments/authorizations/migrateCardOnFile"
+    },
+    "payments:events": {
+      "href": "https://try.access.worldpay.com/payments/events"
+    },
+    "payments:recurringMandate": {
+      "href": "https://try.access.worldpay.com/payments/recurringMandates"
+    },
+    "curies": [
+      {
+        "name": "payments",
+        "href": "https://try.access.worldpay.com/rels/payments/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

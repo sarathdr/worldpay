@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfigService getPaymentUrls  should get the url configs 1`] = `"https://try.access.worldpay.com/payments/authorizations"`;
+
+exports[`ConfigService getPaymentUrls  should handle error 1`] = `
+Object {
+  "status": 400,
+}
+`;

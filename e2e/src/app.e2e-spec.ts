@@ -8,10 +8,44 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should make the payment and refund', async () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('worldpay app is running!');
+    expect(page.getTitleText()).toEqual('Worldpay - Payment');
+
+    await page.getContinuePaymentButton().click();
+    await page.typeCardHolderName('John');
+    await page.typeCardNumber('3423423234324');
+    await page.selectMonth('1');
+    await page.typeYear('2020');
+
+    await page.getPaymentButton().click();
+    expect(page.getPageTitle()).toEqual('Your payment details has been authorized');
+
+    await page.getConfirmPaymentButton().click();
+    expect(page.getPageTitle()).toEqual('Your have successfully made the payment');
+
+    await page.getRefundPaymentButton().click();
+    expect(page.getPageTitle()).toEqual('Your payment has been refunded');
+
   });
+
+  it('should authorize an cancel payment', async () => {
+    page.navigateTo();
+
+    await page.getContinuePaymentButton().click();
+    await page.typeCardHolderName('John');
+    await page.typeCardNumber('3423423234324');
+    await page.selectMonth('1');
+    await page.typeYear('2020');
+
+    await page.getPaymentButton().click();
+    expect(page.getPageTitle()).toEqual('Your payment details has been authorized');
+
+    await page.getCancelPaymentButton().click();
+    expect(page.getContinuePaymentButton().isPresent()).toBeTruthy();
+
+  });
+
 
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser

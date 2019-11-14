@@ -1,0 +1,20 @@
+{
+  "_links": {
+    "payments:refund": {
+      "href": "https://try.access.worldpay.com/payments/settlements/refunds/full/eyJrIjoiazNhYjYzMiJ9"
+    },
+    "payments:partialRefund": {
+      "href": "https://try.access.worldpay.com/payments/settlements/refunds/partials/eyJrIjoiazNhYjYzMiJ9"
+    },
+    "payments:events": {
+      "href": "https://try.access.worldpay.com/payments/events/eyJrIjoiazNhYjYzMiJ9"
+    },
+    "curies": [
+      {
+        "name": "payments",
+        "href": "https://try.access.worldpay.com/rels/payments/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

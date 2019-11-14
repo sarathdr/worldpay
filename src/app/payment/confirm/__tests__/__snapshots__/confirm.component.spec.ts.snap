@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmComponent should render the component correctly 1`] = `
+<test-payment-confirm
+  cart={[Function Object]}
+>
+  <payment-confirm
+    ng-reflect-cart="[object Object]"
+  >
+    <div
+      class="content"
+    >
+      <h1>
+        Your payment details has been authorized
+      </h1>
+      <p>
+        Confirm the payment to transfer money
+      </p>
+      <p>
+        <b>
+          Total
+        </b>
+        £22.00
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="mat-raised-button mat-button-base"
+          mat-raised-button=""
+          type="button"
+        >
+          <span
+            class="mat-button-wrapper"
+          >
+            Cancel
+          </span>
+          <div
+            class="mat-button-ripple mat-ripple"
+            matripple=""
+            ng-reflect-centered="false"
+            ng-reflect-disabled="false"
+            ng-reflect-trigger="[object HTMLButtonElement]"
+          />
+          <div
+            class="mat-button-focus-overlay"
+          />
+        </button>
+        <button
+          class="mat-raised-button mat-button-base mat-primary"
+          color="primary"
+          mat-raised-button=""
+          ng-reflect-color="primary"
+          type="button"
+        >
+          <span
+            class="mat-button-wrapper"
+          >
+            Confirm
+          </span>
+          <div
+            class="mat-button-ripple mat-ripple"
+            matripple=""
+            ng-reflect-centered="false"
+            ng-reflect-disabled="false"
+            ng-reflect-trigger="[object HTMLButtonElement]"
+          />
+          <div
+            class="mat-button-focus-overlay"
+          />
+        </button>
+      </div>
+    </div>
+  </payment-confirm>
+</test-payment-confirm>
+`;

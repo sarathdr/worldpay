@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentService authorizePayment  should authorize, save urls and reset 1`] = `"https://try.access.worldpay.com/payments/authorizations/cancellations/eyJrIjoiazNhYjYzMiJ9"`;
+
+exports[`PaymentService authorizePayment  should authorize, save urls and reset 2`] = `"https://try.access.worldpay.com/payments/settlements/full/eyJrIjoiazNhYjYzMiJ9"`;
+
+exports[`PaymentService confirmPayment  should confirm, save and reset urls 1`] = `"https://try.access.worldpay.com/payments/settlements/refunds/full/eyJrIjoiazNhYjYzMiJ9"`;

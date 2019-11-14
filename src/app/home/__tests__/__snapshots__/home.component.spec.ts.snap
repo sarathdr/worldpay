@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeComponent should render the component correctly 1`] = `
+<test-home-component
+  cart={[Function Object]}
+>
+  <home
+    ng-reflect-cart="[object Object]"
+  >
+    <div
+      class="cart"
+    >
+      <table
+        class="mat-elevation-z8 mat-table"
+        mat-table=""
+        ng-reflect-data-source="[object Object],[object Object"
+        role="grid"
+      >
+        <thead
+          role="rowgroup"
+        >
+          
+          <tr
+            class="mat-header-row"
+            mat-header-row=""
+            role="row"
+          >
+            
+            <th
+              class="mat-header-cell cdk-column-name mat-column-name"
+              mat-header-cell=""
+              role="columnheader"
+            >
+               Products
+            </th>
+            <th
+              class="mat-header-cell cdk-column-price mat-column-price"
+              mat-header-cell=""
+              role="columnheader"
+            >
+               Price
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          role="rowgroup"
+        >
+          
+          <tr
+            class="mat-row"
+            mat-row=""
+            role="row"
+          >
+            
+            <td
+              class="mat-cell cdk-column-name mat-column-name"
+              mat-cell=""
+              role="gridcell"
+            >
+               Pen 
+            </td>
+            <td
+              class="mat-cell cdk-column-price mat-column-price"
+              mat-cell=""
+              role="gridcell"
+            >
+               £10.00 
+            </td>
+          </tr>
+          <tr
+            class="mat-row"
+            mat-row=""
+            role="row"
+          >
+            
+            <td
+              class="mat-cell cdk-column-name mat-column-name"
+              mat-cell=""
+              role="gridcell"
+            >
+               Pencil 
+            </td>
+            <td
+              class="mat-cell cdk-column-price mat-column-price"
+              mat-cell=""
+              role="gridcell"
+            >
+               £12.00 
+            </td>
+          </tr>
+        </tbody>
+        <tfoot
+          class="mat-table-sticky"
+          role="rowgroup"
+          style="bottom: 0px; position: sticky; z-index: 10;"
+        >
+          
+          <tr
+            class="mat-footer-row"
+            mat-footer-row=""
+            role="row"
+          >
+            
+            <td
+              class="mat-footer-cell cdk-column-name mat-column-name mat-table-sticky"
+              mat-footer-cell=""
+              role="gridcell"
+              style="bottom: 0px; position: sticky; z-index: 10;"
+            >
+               Total
+            </td>
+            <td
+              class="mat-footer-cell cdk-column-price mat-column-price mat-table-sticky"
+              mat-footer-cell=""
+              role="gridcell"
+              style="bottom: 0px; position: sticky; z-index: 10;"
+            >
+              <b>
+                £22.00
+              </b>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <button
+        class="mat-raised-button mat-button-base mat-primary"
+        color="primary"
+        mat-raised-button=""
+        ng-reflect-color="primary"
+        ng-reflect-router-link="/payment"
+        routerlink="/payment"
+        tabindex="0"
+      >
+        <span
+          class="mat-button-wrapper"
+        >
+          Continue to payment
+        </span>
+        <div
+          class="mat-button-ripple mat-ripple"
+          matripple=""
+          ng-reflect-centered="false"
+          ng-reflect-disabled="false"
+          ng-reflect-trigger="[object HTMLButtonElement]"
+        />
+        <div
+          class="mat-button-focus-overlay"
+        />
+      </button>
+    </div>
+  </home>
+</test-home-component>
+`;

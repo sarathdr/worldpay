@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmPaymentGuard should not activate route if not authorized 1`] = `
+Array [
+  Array [
+    Array [
+      "home",
+    ],
+  ],
+]
+`;

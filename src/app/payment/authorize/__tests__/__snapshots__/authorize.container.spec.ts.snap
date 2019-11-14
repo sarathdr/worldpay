@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorizeContainer should authorize payment 1`] = `
+Array [
+  Array [
+    Object {
+      "instruction": Object {
+        "narrative": Object {
+          "line1": "trading name",
+        },
+        "paymentInstrument": Object {
+          "cardExpiryDate": Object {
+            "month": 5,
+            "year": 2020,
+          },
+          "cardHolderName": "testing",
+          "cardNumber": 4235234534,
+          "type": "card/plain",
+        },
+        "value": Object {
+          "amount": 22,
+          "currency": "GBP",
+        },
+      },
+      "merchant": Object {
+        "entity": "default",
+      },
+      "transactionReference": "id",
+    },
+  ],
+]
+`;
+
+exports[`AuthorizeContainer should authorize payment 2`] = `
+Array [
+  Array [
+    Array [
+      "payment",
+      "confirm",
+    ],
+  ],
+]
+`;
+
+exports[`AuthorizeContainer should render the component correctly 1`] = `
+<payment-authorize-page
+  cart$={[Function Observable]}
+  cartService={[Function CartService]}
+  paymentService={[Function Object]}
+  router={[Function Object]}
+>
+  <payment-authorize
+    ng-reflect-cart="[object Object]"
+  >
+    <div>
+      Authorize: {
+    "products": [
+      {
+        "name": "Pen",
+        "price": 10
+      },
+      {
+        "name": "Pencil",
+        "price": 12
+      }
+    ],
+    "total": 22,
+    "currency": "GBP"
+  }
+    </div>
+  </payment-authorize>
+</payment-authorize-page>
+`;

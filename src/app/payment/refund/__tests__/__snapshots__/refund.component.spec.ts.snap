@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RefundComponent should render the component correctly 1`] = `
+<test-payment-refund
+  refund={[Function Function]}
+>
+  <payment-refund>
+    <div
+      class="content"
+    >
+      <h1>
+        Your have successfully made the payment
+      </h1>
+      <p>
+        You can still refund the payment
+      </p>
+      <div
+        class="row"
+      >
+        <button
+          class="mat-raised-button mat-button-base"
+          mat-raised-button=""
+          type="button"
+        >
+          <span
+            class="mat-button-wrapper"
+          >
+            Refund
+          </span>
+          <div
+            class="mat-button-ripple mat-ripple"
+            matripple=""
+            ng-reflect-centered="false"
+            ng-reflect-disabled="false"
+            ng-reflect-trigger="[object HTMLButtonElement]"
+          />
+          <div
+            class="mat-button-focus-overlay"
+          />
+        </button>
+        <button
+          class="mat-raised-button mat-button-base mat-primary"
+          color="primary"
+          mat-raised-button=""
+          ng-reflect-color="primary"
+          ng-reflect-router-link="/home"
+          routerlink="/home"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="mat-button-wrapper"
+          >
+            Go to home
+          </span>
+          <div
+            class="mat-button-ripple mat-ripple"
+            matripple=""
+            ng-reflect-centered="false"
+            ng-reflect-disabled="false"
+            ng-reflect-trigger="[object HTMLButtonElement]"
+          />
+          <div
+            class="mat-button-focus-overlay"
+          />
+        </button>
+      </div>
+    </div>
+  </payment-refund>
+</test-payment-refund>
+`;

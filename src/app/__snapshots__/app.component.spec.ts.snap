@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent should create the app 1`] = `
+<app-root>
+  <mat-toolbar
+    class="mat-toolbar"
+  >
+    <span>
+      Worldpay - Payment
+    </span>
+  </mat-toolbar><div
+    class="content"
+  >
+    <router-outlet />
+  </div>
+</app-root>
+`;

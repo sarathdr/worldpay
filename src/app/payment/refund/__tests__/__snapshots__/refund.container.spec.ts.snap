@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RefundContainer should refund payment 1`] = `
+<payment-refund-page
+  paymentService={[Function Object]}
+  refundSuccess={[Function Boolean]}
+  router={[Function Object]}
+>
+  <payment-refund-success>
+    <div>
+      Refund success
+    </div>
+  </payment-refund-success>
+</payment-refund-page>
+`;
+
+exports[`RefundContainer should render the component correctly 1`] = `
+<payment-refund-page
+  paymentService={[Function Object]}
+  refundSuccess="false"
+  router={[Function Object]}
+>
+  <payment-refund>
+    <div>
+      Refund: 
+    </div>
+  </payment-refund>
+</payment-refund-page>
+`;

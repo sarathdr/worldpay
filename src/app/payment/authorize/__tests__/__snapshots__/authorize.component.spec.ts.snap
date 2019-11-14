@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorizeComponent should handle submit form 1`] = `
+Array [
+  Array [
+    Object {
+      "narrative": Object {
+        "line1": "trading name",
+      },
+      "paymentInstrument": Object {
+        "cardExpiryDate": Object {
+          "month": 5,
+          "year": 2020,
+        },
+        "cardHolderName": "testing",
+        "cardNumber": 4235234534,
+        "type": "card/plain",
+      },
+      "value": Object {
+        "amount": 22,
+        "currency": "GBP",
+      },
+    },
+  ],
+]
+`;
+
+exports[`AuthorizeComponent should render the component correctly 1`] = `
+<test-authorize-component
+  authorizePayment={[Function Function]}
+  cart={[Function Object]}
+>
+  <payment-authorize
+    ng-reflect-cart="[object Object]"
+  >
+    <payment-authorize-form>
+      <div>
+        Authorize form
+      </div>
+    </payment-authorize-form>
+  </payment-authorize>
+</test-authorize-component>
+`;

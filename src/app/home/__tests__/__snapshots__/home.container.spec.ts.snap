@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeComponent should render the component correctly 1`] = `
+<home-page
+  cart$={[Function Observable]}
+>
+  <home
+    ng-reflect-cart="[object Object]"
+  >
+    <div>
+      Home: {
+    "products": [
+      {
+        "name": "Pen",
+        "price": 10
+      },
+      {
+        "name": "Pencil",
+        "price": 12
+      }
+    ],
+    "total": 22,
+    "currency": "GBP"
+  }
+    </div>
+  </home>
+</home-page>
+`;
