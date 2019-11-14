@@ -24,7 +24,8 @@ describe('ConfirmPaymentGuard', () => {
         {
           provide: PaymentService,
           useValue: {
-            hasAuthorized
+            hasAuthorized,
+            resetAuthorize
           }
         },
         {
@@ -51,6 +52,11 @@ describe('ConfirmPaymentGuard', () => {
       expect(value).toBeFalsy();
       expect(navigate.mock.calls).toMatchSnapshot();
     });
+  });
+
+  it('should reset state when deactivate', () => {
+    guard.canDeactivate();
+    expect(resetAuthorize).toHaveBeenCalled();
   });
 
 });

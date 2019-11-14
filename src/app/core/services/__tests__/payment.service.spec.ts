@@ -72,7 +72,7 @@ describe('PaymentService', () => {
 
   describe('confirmPayment ', () => {
 
-    beforeEach(() =>{
+    beforeEach(() => {
       const mockSettleUrl = jest.fn();
       service.getSettleUrl = mockSettleUrl;
       mockSettleUrl.mockReturnValue('http://mock-settle');
@@ -107,7 +107,7 @@ describe('PaymentService', () => {
 
   describe('cancelPayment ', () => {
 
-    beforeEach(() =>{
+    beforeEach(() => {
       const mockGetCancelUrl = jest.fn();
       service.getCancelUrl = mockGetCancelUrl;
       mockGetCancelUrl.mockReturnValue('http://mock-cancel');
@@ -119,7 +119,7 @@ describe('PaymentService', () => {
       const subs = '^';
 
       post.mockReturnValue(response$);
-      expect(service.refundPayment()).toBeObservable(expected$);
+      expect(service.cancelPayment()).toBeObservable(expected$);
       expect(response$).toHaveSubscriptions(subs);
     });
 
@@ -128,14 +128,14 @@ describe('PaymentService', () => {
       const response$ = cold('-#', {}, { status: 400 });
       post.mockReturnValue(response$);
 
-      expect(service.refundPayment()).toBeObservable(expected$);
+      expect(service.cancelPayment()).toBeObservable(expected$);
     });
 
   });
 
   describe('refundPayment ', () => {
 
-    beforeEach(() =>{
+    beforeEach(() => {
       const mockGetRefundUrl = jest.fn();
       service.getRefundUrl = mockGetRefundUrl;
       mockGetRefundUrl.mockReturnValue('http://mock-refund');

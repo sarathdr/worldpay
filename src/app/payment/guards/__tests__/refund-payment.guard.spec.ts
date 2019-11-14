@@ -52,6 +52,12 @@ describe('RefundPaymentGuard', () => {
       expect(value).toBeFalsy();
       expect(navigate.mock.calls).toMatchSnapshot();
     });
+
+  });
+
+  it('should reset state when deactivate', () => {
+    guard.canDeactivate();
+    expect(resetRefund).toHaveBeenCalled();
   });
 
 });
