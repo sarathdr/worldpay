@@ -1,0 +1,12 @@
+@import '../styles/toolkit';
+@import '~govuk-frontend/govuk/components/date-input/date-input';
+
+.pdk-date-input {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+
+  &__picker {
+    margin-left: -5px;
+  }
+}

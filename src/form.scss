@@ -1,0 +1,15 @@
+@import '../styles/toolkit';
+@import '~govuk-frontend/govuk/objects/form-group';
+
+pdk-form-field {
+  @include govuk-responsive-margin(6, 'bottom');
+  display: block;
+
+  pdk-form-field:last-of-type {
+    margin-bottom: 0; // Remove margin from last item in nested groups
+  }
+}
+
+pdk-form-group {
+  display: block;
+}

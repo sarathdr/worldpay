@@ -1,0 +1,12 @@
+@import '../styles/toolkit';
+@import '~govuk-frontend/govuk/components/tabs/tabs';
+
+:host {
+  @include govuk-responsive-margin(1, 'top');
+  @include govuk-responsive-margin(6, 'bottom');
+  display: block;
+}
+
+.govuk-tabs {
+  margin: 0;
+}
